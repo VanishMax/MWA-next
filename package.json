@@ -1,0 +1,38 @@
+{
+  "name": "nextmwa",
+  "version": "0.0.1",
+  "description": "MWA is written with next.js and Tailwind css",
+  "main": "index.js",
+  "scripts": {
+    "start": "next start",
+    "dev": "next",
+    "build": "next build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VanishMax/MWA_next.git"
+  },
+  "keywords": [
+    "modern",
+    "web",
+    "app",
+    "next.js",
+    "react",
+    "webpack",
+    "babel",
+    "tailwind",
+    "pwa",
+    "mwa"
+  ],
+  "author": "VanishMax",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VanishMax/MWA_next/issues"
+  },
+  "homepage": "https://github.com/VanishMax/MWA_next#readme",
+  "dependencies": {
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
