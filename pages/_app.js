@@ -15,7 +15,7 @@ class MyApp extends App {
     return (
       <Container>
         <Head>
-          <meta name="theme-color" content="#810051"/>
+          <meta name="theme-color" content="#616161"/>
           <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon"/>
           <link rel="icon" href="/static/favicon.ico" type="image/x-icon"/>
           <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"/>
