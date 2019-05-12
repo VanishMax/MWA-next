@@ -22,18 +22,3 @@
 .title, .description {
   text-align: center;
 }
-
-.quote {
-  float: left;
-  margin-left: 5%;
-  width: 20%;
-}
-.card {
-  float: left;
-  margin-left: 5%;
-  max-width: 500px;
-}
-.catPhoto {
-  width: 500px;
-  height: 375px;
-}
