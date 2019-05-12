@@ -13,9 +13,12 @@ export default class Home extends React.Component {
   static async getInitialProps () {
     const res = await fetch('http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1')
     const json = await res.json()
-    let quote, author;
-    json[0] ? quote = json[0].content.match(/<p>(.*)<\/p>/i)[1] : quote = ''
-    json[0] ? author = json[0].title : author = ''
+    let quote = '', author = '';
+    if(json[0]) {
+      author = json[0].title
+      let text = json[0].content.match(/<p>(.*)<\/p>/i)[1]
+      if(text) quote = text
+    }
     return { quote: quote, author: author }
   }
 
@@ -73,8 +76,8 @@ export default class Home extends React.Component {
                   {this.state.url && <img className="w-full rounded" src={this.state.url} alt="Catass"/>}
                 </div>
 
-                <div className="px-6 py-6">
-                  <div className="font-bold text-xl mb-2 text-center">Modern Web App</div>
+                <div className="px-6 py-2">
+                  <div className="font-semibold text-xl text-center">Modern Web App</div>
                 </div>
               </div>
             </div>
@@ -96,8 +99,8 @@ export default class Home extends React.Component {
                   {this.state.url && <img className="w-full rounded" src={this.state.url} alt="Catass"/>}
                 </div>
 
-                <div className="px-6 py-6">
-                  <div className="font-bold text-xl mb-2 text-center">Modern Web App</div>
+                <div className="px-6 py-5">
+                  <div className="font-semibold text-xl text-center">Modern Web App</div>
                 </div>
               </div>
 
