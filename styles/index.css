@@ -29,7 +29,7 @@
 }
 
 .btn-gray-outlined {
-  @apply bg-transparent text-gray-800 text-lg font-semibold py-2 px-4 border border-gray-600 rounded mx-2;
+  @apply bg-transparent text-gray-800 text-lg font-semibold py-2 my-2 px-4 border border-gray-600 rounded mx-1;
 }
 .btn-gray-outlined:hover {
   @apply bg-gray-200 text-gray-900 border-transparent cursor-pointer;
