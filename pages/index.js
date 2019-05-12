@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import 'isomorphic-unfetch'
+import Counter from '../components/counter'
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -46,7 +47,7 @@ export default class Home extends React.Component {
             <div className="flex md:hidden lg:hidden">
               <div className="w-full my-8 mx-2">
                 <div className="rounded shadow-lg text-lg p-4">
-                  <p>Kekes</p>
+                  <Counter/>
                 </div>
               </div>
             </div>
@@ -102,7 +103,7 @@ export default class Home extends React.Component {
 
               <div className="w-1/4 my-8 mx-2">
                 <div className="rounded shadow-lg text-lg p-4">
-                  <p>Kekes</p>
+                  <Counter/>
                 </div>
               </div>
             </div>
