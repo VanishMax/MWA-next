@@ -4,7 +4,7 @@
   "description": "MWA is written with next.js and Tailwind css",
   "main": "index.js",
   "scripts": {
-    "start": "next build && next start -p process.env.PORT",
+    "start": "next build && next start -p $PORT",
     "dev": "next"
   },
   "repository": {
