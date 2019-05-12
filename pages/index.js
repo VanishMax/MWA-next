@@ -62,7 +62,7 @@ export default class Home extends React.Component {
 
               <div className="md:w-1/2 my-8 mx-2">
                 <div className="rounded shadow-lg text-lg p-4">
-                  <p>Kekes</p>
+                  <Counter/>
                 </div>
               </div>
             </div>
@@ -108,7 +108,6 @@ export default class Home extends React.Component {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     )

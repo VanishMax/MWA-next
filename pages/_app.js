@@ -3,12 +3,14 @@ import React from 'react'
 import '../styles/index.css'
 import App, { Container } from 'next/app'
 import Head from 'next/head'
+import { Provider } from 'react-redux'
+import withStore from '../redux/withStore'
 
 import Nav from '../components/nav'
 
-export default class MyApp extends App {
+class MyApp extends App {
   render () {
-    const { Component, pageProps } = this.props
+    const { Component, pageProps, reduxStore } = this.props
 
     return (
       <Container>
@@ -21,8 +23,12 @@ export default class MyApp extends App {
           <meta name='author' content='VanishMax'/>
         </Head>
         <Nav/>
-        <Component {...pageProps} />
+        <Provider store={reduxStore}>
+          <Component {...pageProps} />
+        </Provider>
       </Container>
     )
   }
 }
+
+export default withStore(MyApp)
