@@ -9,15 +9,14 @@ export default class Home extends React.Component {
     this.state = { url: '' }
   }
 
-
   static async getInitialProps () {
     const res = await fetch('http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1')
     const json = await res.json()
     let quote = '', author = '';
     if(json[0]) {
       author = json[0].title
-      let text = json[0].content.match(/<p>(.*)<\/p>/i)[1]
-      if(text) quote = text
+      let text = json[0].content.match(/<p>(.*)<\/p>/i)
+      if(text[1] != null) quote = text[1]
     }
     return { quote: quote, author: author }
   }

@@ -1,12 +1,11 @@
 {
   "name": "nextmwa",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "MWA is written with next.js and Tailwind css",
   "main": "index.js",
   "scripts": {
-    "start": "next start",
-    "dev": "next",
-    "build": "next build"
+    "start": "next build && next start -p process.env.PORT",
+    "dev": "next"
   },
   "repository": {
     "type": "git",
