@@ -1,15 +1,11 @@
 import Head from 'next/head'
-import Nav from '../components/nav'
 
 export default () => (
   <div>
     <Head>
       <title>About MWA</title>
       <meta name='description' content='About the MWA'/>
-      <meta name='keywords' content='MWA, Modern Web App, PWA, Progressive Web App, Next.js, Next, Tailwind, Redux, WebDev'/>
-      <meta name='author' content='VanishMax'/>
     </Head>
-    <Nav />
     <div className='hero'>
       <h1 className='title'>About MWA</h1>
       <div className="max-w-lg rounded overflow-hidden shadow-lg my-8 mx-auto">

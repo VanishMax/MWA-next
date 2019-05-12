@@ -2,8 +2,6 @@ import React from 'react'
 import Head from 'next/head'
 import 'isomorphic-unfetch'
 
-import Nav from '../components/nav'
-
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -14,8 +12,10 @@ export default class Home extends React.Component {
   static async getInitialProps () {
     const res = await fetch('http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1')
     const json = await res.json()
-    let quote = json[0].content.match(/<p>(.*)<\/p>/i)[1]
-    return { quote: quote, author: json[0].title }
+    let quote, author;
+    json[0] ? quote = json[0].content.match(/<p>(.*)<\/p>/i)[1] : quote = ''
+    json[0] ? author = json[0].title : author = ''
+    return { quote: quote, author: author }
   }
 
   componentDidMount() {
@@ -28,10 +28,7 @@ export default class Home extends React.Component {
         <Head>
           <title>Modern Web App</title>
           <meta name='description' content='MWA is a progressive solution to build awesome web applications'/>
-          <meta name='keywords' content='MWA, Modern Web App, PWA, Progressive Web App, Next.js, Next, Tailwind, Redux, WebDev'/>
-          <meta name='author' content='VanishMax'/>
         </Head>
-        <Nav />
         <div className='hero'>
           <h1 className='title'>Redux Cat-counter</h1>
 
