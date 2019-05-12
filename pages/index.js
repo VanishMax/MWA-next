@@ -10,7 +10,7 @@ export default class Home extends React.Component {
   }
 
   static async getInitialProps () {
-    const res = await fetch('http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1')
+    const res = await fetch('//quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1')
     const json = await res.json()
     let quote = '', author = '';
     if(json[0]) {
@@ -22,7 +22,7 @@ export default class Home extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({ url: "https://cataas.com/cat?width=500&height=375"})
+    this.setState({ url: "//cataas.com/cat?width=500&height=375"})
   }
 
   render() {
