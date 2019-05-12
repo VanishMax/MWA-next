@@ -30,7 +30,7 @@ export default class Home extends React.Component {
           <meta name='description' content='MWA is a progressive solution to build awesome web applications'/>
         </Head>
         <div className='hero'>
-          <h1 className='title'>Redux Cat-counter</h1>
+          <h1 className='title font-comforta'>Redux Cat-counter</h1>
 
           <div className="default-grid">
             <div className="flex md:hidden lg:hidden">
