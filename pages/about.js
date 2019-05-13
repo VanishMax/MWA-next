@@ -4,10 +4,10 @@ export default () => (
   <div>
     <Head>
       <title>About MWA</title>
-      <meta name='description' content='About the MWA'/>
+      <meta name="description" content="About the MWA"/>
     </Head>
-    <div className='hero'>
-      <h1 className='title font-comforta'>About MWA</h1>
+    <div className="w-full">
+      <h1 className="title font-comforta">About MWA</h1>
       <div className="max-w-lg rounded overflow-hidden shadow-lg my-8 mx-auto">
         <img className="w-full" src="/static/MWA.jpg" alt="Sunset in the mountains"/>
         <div className="px-6 py-6">

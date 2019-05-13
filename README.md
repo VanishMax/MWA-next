@@ -46,10 +46,11 @@ pages meet errors.
 ### Content loading
 
 ***getInitialProps()*** - This is the function provided by Next.
-It load content by the server, so no client touches it. In the
-home page the quotation block gets the quotation of famous
-people during server rendering. it means that when the page will
-be rendered in the first time - it will have the quotation.
+It load content by the server with *isomorphic-unfetch*, so no
+client touches it. In the home page the quotation block gets the
+quotation of famous people during server rendering. it means
+that when the page will be rendered in the first time - it will
+have the quotation.
 
 ***componentDidMount()*** - lifecycle method accessed only by
 a client when the page is fully ready. In the example it
@@ -62,7 +63,10 @@ the quotation - there it is, rendered by server.
 ***Redux*** is here to be a showcase how global state could
 be managed in the application with SSR. The counter simply
 increases and decreases the number, while the Redux-store keeps
-the state not depending on the page at where you are.
+the state not depending on the page at where you are. The
+interesting thing is that we use react-redux v7.1.0-alpha
+which supports react hooks, so there is no need to create
+components - simply work with functions and Redux.
 
 ### SEO
 

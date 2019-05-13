@@ -12,20 +12,8 @@
   font-family: Comfortaa, sans-serif;
 }
 
-.hero {
-  width: 100%;
-}
-
 .title {
-  margin: 0;
-  width: 100%;
-  padding-top: 40px;
-  line-height: 1.15;
-  font-size: 38px;
-}
-
-.title, .description {
-  text-align: center;
+  @apply w-full text-center leading-tight m-0 pt-8 text-4xl;
 }
 
 .btn-gray-outlined {

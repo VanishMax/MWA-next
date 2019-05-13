@@ -22,7 +22,7 @@ export default class Home extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({ url: "//cataas.com/cat?width=500&height=375"})
+    this.setState({ url: '//cataas.com/cat?width=500&height=375'})
   }
 
   render() {
@@ -30,10 +30,10 @@ export default class Home extends React.Component {
       <div>
         <Head>
           <title>Modern Web App</title>
-          <meta name='description' content='MWA is a progressive solution to build awesome web applications'/>
+          <meta name="description" content="MWA is a progressive solution to build awesome web applications"/>
         </Head>
-        <div className='hero'>
-          <h1 className='title font-comforta'>Redux Cat-counter</h1>
+        <div className="w-full">
+          <h1 className="title font-comforta">Redux Cat-counter</h1>
 
           {/* Small and middle viewports */}
           <div>
